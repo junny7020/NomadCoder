@@ -1,20 +1,27 @@
-function plus(firstNum, SecondNum){
-    console.log(firstNum + SecondNum);
-}
-// firstNUm and SecondNum only exist inside the function
-function divide(firstNum, SecondNum){
-    console.log(firstNum/SecondNum);
-}
+const calculator = {
+    add: function(a, b){
+        console.log(a + b);
+    },
 
-const player = {
-    name: "June",
-    sayHello: function (otherPersonsName){
-        console.log("hello " + otherPersonsName + " nice to meet you!");
+    minus: function(a, b){
+        console.log(a - b);
+    },
+
+    mult: function(a, b){
+        console.log(a * b);
+    },
+
+    div: function(a, b){
+        console.log(a/b);
+    },
+
+    powerof: function(a, b){
+        console.log(a**b);
     },
 };
 
-plus(8, 30);
-divide(4, 9);
-console.log(player.name);
-player.sayHello("Nico");
-// making function
+calculator.add(1,2);
+calculator.minus(1,2);
+calculator.mult(1,2);
+calculator.div(1,2);
+calculator.powerof(1,2);
