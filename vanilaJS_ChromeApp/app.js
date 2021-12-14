@@ -14,3 +14,5 @@ player.points = 20;
 console.log(player.points);
 // player is const object
 // the object can not be changed but the content can be changed or added
+player.lastname = "C.";
+console.log(player.lastname);
