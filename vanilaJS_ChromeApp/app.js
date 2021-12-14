@@ -1,18 +1,20 @@
+function plus(firstNum, SecondNum){
+    console.log(firstNum + SecondNum);
+}
+// firstNUm and SecondNum only exist inside the function
+function divide(firstNum, SecondNum){
+    console.log(firstNum/SecondNum);
+}
+
 const player = {
     name: "June",
-    points: 10,
-    studyMath: true,
+    sayHello: function (otherPersonsName){
+        console.log("hello " + otherPersonsName + " nice to meet you!");
+    },
 };
-// this is an object
 
-console.log(player);
+plus(8, 30);
+divide(4, 9);
 console.log(player.name);
-// this means console is also an object
-console.log(player["name"]);
-console.log(player.points);
-player.points = 20;
-console.log(player.points);
-// player is const object
-// the object can not be changed but the content can be changed or added
-player.lastname = "C.";
-console.log(player.lastname);
+player.sayHello("Nico");
+// making function
