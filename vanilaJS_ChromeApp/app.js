@@ -1,18 +1,13 @@
-const a = 5;
-const b = 2;
-let myName = "June";
-// const can't change but let can
-// Never use var
-// var can re-declare and updated
+const amIcoder = true;
+const thisIsNull = null;
+let something;
 
-//          Re-declare      update
-// const:       x             x
-// let:         x             o
-// var:         o             o
-console.log(a + b);
-console.log(a / b);
-console.log(a * b);
-console.log("hello " + myName);
+console.log(amIcoder);
+console.log(thisIsNull);
+console.log(something);
+something = false;
+console.log(something);
 
-myName = "Minjun";
-console.log("Your new name is " + myName);
+// null is a value of nothing
+// undefined == it is declared but not defined
+// python: null-->None
