@@ -1,27 +1,33 @@
 const calculator = {
     add: function(a, b){
-        console.log(a + b);
+        return a + b;
     },
 
     minus: function(a, b){
-        console.log(a - b);
+        return a - b;
     },
 
     mult: function(a, b){
-        console.log(a * b);
+        return a * b;
     },
 
     div: function(a, b){
-        console.log(a/b);
+        return a / b;
     },
 
     powerof: function(a, b){
-        console.log(a**b);
+        return a ** b;
     },
 };
 
-calculator.add(1,2);
-calculator.minus(1,2);
-calculator.mult(1,2);
-calculator.div(1,2);
-calculator.powerof(1,2);
+const addResult = calculator.add(2, 3);
+const minusResult = calculator.minus(addResult, 1);
+const multResult = calculator.mult(addResult, minusResult);
+const powResult = calculator.powerof(multResult, minusResult);
+const divResult = calculator.div(powResult, addResult);
+
+console.log(addResult);
+console.log(minusResult);
+console.log(multResult);
+console.log(powResult);
+console.log(divResult);
