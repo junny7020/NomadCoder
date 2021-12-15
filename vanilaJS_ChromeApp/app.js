@@ -1,11 +1,14 @@
 // querySelector ---> "#Id element"
 // or ".tag element"
-// getElementsById
-const t = document.querySelector(".hello h1");
-const title = document.getElementById("title");
+// queryselectorAll -->  array
+// getElementsById --> array
+const title = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+    console.log("Title was clicked!");
+    title.style.color = "pink";
+}
 
 console.dir(title);
-title.innerText = "Got it!";
-
-console.log(t.innerText);
-console.log(title.className);
+title.style.color = "blue";
+title.addEventListener("click", handleTitleClick);
