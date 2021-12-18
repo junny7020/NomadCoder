@@ -14,12 +14,19 @@ function saveToDos() {
 function deletToDo(event) {
     const li = event.target.parentElement;
     li.remove();
+    // li.id type is String!! 
+    // so this won't work! toDos = toDos.filter(toDos => toDos.id !== li.id);
+    // toDos.id is integer
+    toDos = toDos.filter(toDos => toDos.id !== parseInt(li.id));
+    saveToDos();
+
 }
 
 function paintToDo(newToDo) {
     const li = document.createElement("li");
+    li.id = newToDo.id;
     const span = document.createElement("span");
-    span.innerText = newToDo;
+    span.innerText = newToDo.text;
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click",deletToDo);
@@ -32,8 +39,12 @@ function handletoDoSubmit(event) {
     event.preventDefault();
     const newToDo = toDoInput.value;
     toDoInput.value = "";
-    toDos.push(newToDo);
-    paintToDo(newToDo);
+    const newToDoObj = {
+        text: newToDo,
+        id: Date.now(),
+    };
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
     saveToDos();
 }
 
@@ -46,3 +57,13 @@ if(savedToDos !== null) {
     toDos =parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
+// function sexyFilter(todo) {
+// // returns true or false
+//     return todo.id !== //....
+// }
+
+//array.filter(sexyFilter) --> do filter for eaach item in the array...
+// if sexyFilter(item) is true, then keep the item in the array
+// if false don't put the item in the array
+// array.filter(sexyFilter) at the end returns a new array that fits the sexyFilter condition
