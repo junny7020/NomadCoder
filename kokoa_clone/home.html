@@ -45,11 +45,39 @@
         </abbr>. But not yet.
     </p>
     <form>
-        <input required placeholder="Name" type="text"/>
-        <input required placeholder="Last Name" type="text"/>
-        <input required placeholder="Username" type="text"/>
-        <input required placeholder="Password" type="password"/>
-        <input type="submit" value="Create Account"/>
+        <!-- non-semantic html tag: div,span ===  tag that has no meaning -->
+        <!-- semantic html tag: headr, main, footer -->
+        <!-- header is different to head it is like div, but has meaning like header -->
+        <!-- <div> tag is division, it does not have meaning for the division... 
+            It is like a box! -->
+        <!-- div !== header,main,footer,aside -->
+        <!-- span !== p, address,h1,h2, -->
+        <div>
+            <label for="profile">Profile Photo</label>
+            <!-- if for of the label === id of input , then the input will be activated if the label is clicked -->
+            <input id="profile" type="file" accept="image/*"/>
+            <!-- if accept=".png" then only accept .png files-->
+        </div>
+        <div>
+            <label for="first-name" >First Name</label>
+            <input id="first-name" required placeholder="Name" type="text"/>
+            <!-- 'disabled' attribute=== input disabled -->
+            <input required placeholder="Last Name" type="text"/>
+            <input required placeholder="Username" type="text"/>
+            <input required placeholder="Password" type="password"/>
+            <input type="submit" value="Create Account"/>
+        </div>
+        <input type="button"/>
     </form>
+    <form>
+        <label for="website">Website</label>
+        <input id="website" required placeholder="website url" type="url"/>
+        <input type="submit" value="Enter website url"/>
+    </form>
+    <!--  id can be used inside of body and it has to be unique!-->
+    <!-- a tag can have only one id -->
 </body>
 </html>
+
+<!-- <tagname attrname="attrvalue">efefaeff</tagname> -->
+<!-- always use double quotes "" for atrivalue -->
