@@ -1,0 +1,31 @@
+/* selector {
+    write the style of selector
+}*/
+
+h1 {
+    /* css rule */
+    color:blue;
+    font-size:35px;
+    text-decoration:underline;
+    font-style:italic;
+}
+/* css means Cascading Style Sheet
+    cascading means going from top to bottom
+    so webpage will show the last features of the css
+    order will affect the css
+*/
+
+/* blocks like div(header,main,footer,<p>......) do not let anything nect to it
+but inlines such as span(<a>,img) let something next to it
+only span, <a>, img are inlines
+*/
+/* it is possible to change blockes to inlines and vice versa*/
+/* blocks has three properties: margin, border, padding */
+/* margin: space between border of the block and outside the block */
+/* margin: oneValue--> all side */
+/* margin: top,bottom right,left */
+/* margin: top right bottom left- */
+
+
+
+/*  padding: space between border of the block and inside the block */
