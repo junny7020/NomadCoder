@@ -29,3 +29,24 @@ only span, <a>, img are inlines
 
 
 /*  padding: space between border of the block and inside the block */
+/* 
+* {
+    ...
+}
+* means all
+     */
+/* margin top and bottom doesn't apply to inlines
+inlines don't have height*/
+/* 
+#id{
+    
+}
+
+.class{
+
+}
+
+*/
+
+
+/* display = "inline" or "block" or "inline-block"*/
