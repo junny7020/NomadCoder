@@ -2,13 +2,13 @@
     write the style of selector
 }*/
 
-h1 {
+/* h1 { */
     /* css rule */
-    color:blue;
-    font-size:35px;
-    text-decoration:underline;
-    font-style:italic;
-}
+    /* color:blue; */
+    /* font-size:35px; */
+    /* text-decoration:underline; */
+    /* font-style:italic; */
+/* } */
 /* css means Cascading Style Sheet
     cascading means going from top to bottom
     so webpage will show the last features of the css
@@ -50,3 +50,38 @@ inlines don't have height*/
 
 
 /* display = "inline" or "block" or "inline-block"*/
+
+/* if the size of a display is different, then the page will look different.
+(The design of the page will be massed up) 
+Because of this people came up with the idea: flex-box*/
+
+/* There are three important rules for flex box!:
+Rule 1: You do not talk to children! you only talk to parents! 
+Rule 2: justify-content => main axis (defualt horizontal axis)
+Rule 3: align-item => cross axis (defualt vertical axis)*/
+
+/*Practice flex --> https://flexboxfroggy.com/#ko */
+
+body {
+    height: 100vh;
+    display:flex;
+    /* nody becomes flex container with main and cross axes */
+    margin:20px;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color:teal;
+}
+
+#second_div {
+    background-color:wheat;
+}
