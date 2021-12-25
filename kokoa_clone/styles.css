@@ -85,3 +85,36 @@ div {
 #second_div {
     background-color:wheat;
 }
+
+/* position: fixed --> the element's position is fixed even while scrolling*/
+/* position: relative --> the element's position can be set in a relative position of is's parents*/
+/* position: absolute --> the element's position is absolute to it's parent with a relative position*/
+
+
+/* Pseudo Selector */
+/* do style for nth div,span,.... etc elements */
+
+/* 
+div:first-child{
+    style for first div
+} 
+*/
+/* 
+span:nth-child(even/odd/3n+1/....){
+    style for even/odd/(3n+1)th spans
+} */
+
+/* p span {
+    ...
+}
+=> style for any span inside p
+
+p > span {
+    ...
+}
+=> style for any span which is a direct child of p
+
+p + span {
+    ...
+}
+=> style for span which comes after p. */
