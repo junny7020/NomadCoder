@@ -147,3 +147,43 @@ p + span {
   /* 
   element []
   */
+
+
+  /* 
+  26th Dec 2021
+  States:   Active, hover, focus, focus-within, visited 
+  Active: when clicked
+  hover: when mouse is hovering
+  focus: selected by keyboard
+  focus-with: applied for parent of the selected child---> when it's child is selected then the change is applied on the parent element
+  visited: when the link is visted
+  */
+
+/*
+  EX:::
+form:hover input{
+    ...
+}
+--> means: when /hover/ on /form/, then input has style: ... 
+
+input:focus{
+    ...
+}
+--> means: when input is focused, then ... is applied on input.
+
+form:hover input:focus{
+    ...
+}
+--> means: when form is hovered and input is focused, then ... is applied on input.
+
+*/
+
+/* 
+pseudo element===> use extra: for formating the pseudo element
+
+element::placeholder {
+    ...
+}
+--> ... applied on placeholder of the element
+
+*/
