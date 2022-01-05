@@ -6,26 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>June KokoaTalk Clone</title>
     <style>
-        a {
-            color: wheat;
-            background-color:tomato;
-            text-decoration: none;
-            padding: 3px 5px;
-            border-radius: 5px;
-            font-size: 60px;
-            transition: background-color 5s ease-in-out, 
-                color 5s cubic-bezier(0.165, 0.840, 0.440, 1.000), /* easeOutQuart */
-                border-radius 3s cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
-
-            }
-        a:hover { 
-            color:tomato;
-            background-color:wheat;
-            border-radius: 20px;
+        img {
+            border: 10px  solid black;
+            border-radius: 50%;
+            /*  transform: translateX,Y 
+                           scaleX ,Y 
+                           rotateX,Y,Z 
+                transform does not happen on the boxes*/
+            transition: transform 5s ease-in-out;
+        }
+        img:hover {
+            transform: rotateZ(90deg);
         }
     </style>
 </head>
 <body>
-    <a href="#">Go home</a>
+    <img src="img/nomad_coder.png">
 </body>
 </html>
