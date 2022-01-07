@@ -11,28 +11,31 @@
             height: 100vh;
             align-items:center;
             justify-content: center;
+            flex-direction: column;
         }
-        @keyframes coinFlip {
-            0% {
-                transform: rotateX(0);
-            }
-
-            50% {
-                transform: rotateX(360deg) translateY(100px);
-            }
-
-            100% {
-                transform: rotateX(0);
+        div {
+           background-color:teal;
+           width: 200px;
+           height: 200px;
+        }
+        @media screen and (max-width: 600px) {
+            div{
+                background-color:tomato;
             }
         }
-        img {
-            border: 10px  solid black;
-            border-radius: 50%;
-            animation: coinFlip 2s ease-in-out;
+        span {
+            font-size: 36px;
+        }
+
+        @media screen and (orientation: landscape) {
+            span {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="img/nomad_coder.png">
+    <div></div>
+    <span>Please flip your phone!</span>
 </body>
 </html>
